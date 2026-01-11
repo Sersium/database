@@ -1,0 +1,20 @@
+name: Open Matte
+description: Matches releases with restored widescreen aspect ratio labelled as Open Matte. This is an alternative presentation that removes black bars from the original theatrical release.
+tags:
+  - Edition
+  - Aspect Ratio
+conditions:
+  - name: Open Matte
+    negate: false
+    pattern: Open Matte
+    required: true
+    type: release_title
+tests:
+  - expected: true
+    input: Zombieland.2009.Open.Matte.1080p.WEB-DL.DD+5.1.H.264-spartanec163.mkv
+  - expected: true
+    input: Watchmen 2009 Director's Cut Open Matte 1080p WEB-DL DDP 5.1 H.264
+  - expected: true
+    input: Tron Legacy 2010 Open Matte Upscale 2160p BluRay DV HDR-X DTS-HD MA 7.1 x265-BiTOR
+  - expected: false
+    input: Movie 2020 1080p BluRay DTS-HD MA 5.1 x265-Test
