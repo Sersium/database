@@ -1,0 +1,27 @@
+name: AV1 (SDR)
+description: Allows AV1 only when the release is SDR for 2160p WEB-DL.
+tags:
+- Codec
+- Bleeding Edge
+conditions:
+- name: 2160p
+  negate: false
+  required: true
+  resolution: 2160p
+  type: resolution
+- name: WEB-DL
+  negate: false
+  required: true
+  source: web_dl
+  type: source
+- name: AV1
+  negate: false
+  pattern: AV1
+  required: true
+  type: release_title
+- name: Not HDR
+  negate: true
+  pattern: Basic HDR Formats
+  required: true
+  type: release_title
+tests: []
