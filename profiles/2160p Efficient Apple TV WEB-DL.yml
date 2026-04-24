@@ -107,8 +107,6 @@ custom_formats:
   score: -999999
 - name: h265 (Efficient)
   score: -999999
-- name: Lossless Audio
-  score: -999999
 - name: Remux
   score: -999999
 - name: VP9
