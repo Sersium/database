@@ -10,7 +10,9 @@ description: 'Apple TV-focused 2160p profile for high-quality source WEB-DLs.
 
   - Audio preference: DD+ Atmos > DD+ > Dolby Digital
 
-  - Rejects TrueHD-only releases and hard-bans lossy-incompatible formats for Apple TV'
+  - Prioritizes hardware-friendly codec order for Apple TV 4K: x265 (HEVC) > x264 > VP9
+
+  - AV1 is deprioritized by default, but allowed for SDR releases'
 tags:
 - 2160p
 - WEB-DL Only
@@ -94,7 +96,7 @@ custom_formats:
 - name: ASL
   score: -999999
 - name: AV1
-  score: -999999
+  score: -200
 - name: Banned Groups (Efficient)
   score: -999999
 - name: Banned WEBRip (Efficient)
@@ -110,13 +112,15 @@ custom_formats:
 - name: Remux
   score: -999999
 - name: VP9
-  score: -999999
+  score: 100
 - name: VVC
   score: -999999
 - name: x264 (2160p)
-  score: -999999
-- name: x265 (Efficient)
-  score: -999999
+  score: 400
+- name: AV1 (SDR)
+  score: 300
+- name: x265 (2160p WEB-DL)
+  score: 800
 - name: Xvid
   score: -999999
 custom_formats_radarr:

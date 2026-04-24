@@ -1,0 +1,21 @@
+name: x265 (2160p WEB-DL)
+description: Matches 2160p WEB-DL releases encoded with x265/h265/HEVC.
+tags:
+- Codec
+conditions:
+- name: 2160p
+  negate: false
+  required: true
+  resolution: 2160p
+  type: resolution
+- name: WEB-DL
+  negate: false
+  required: true
+  source: web_dl
+  type: source
+- name: x265 h265 HEVC
+  negate: false
+  pattern: HEVC
+  required: true
+  type: release_title
+tests: []
