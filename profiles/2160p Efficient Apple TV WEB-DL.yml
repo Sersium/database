@@ -8,7 +8,7 @@ description: 'Apple TV-focused 2160p profile for high-quality source WEB-DLs.
 
   - Video preference: Dolby Vision > HDR10+ > HDR10 > SDR
 
-  - Audio preference: DD+ Atmos > DD+ > Dolby Digital > TrueHD (last)
+  - Audio preference: DD+ Atmos > DD+ > Dolby Digital
 
   - Rejects TrueHD-only releases and hard-bans lossy-incompatible formats for Apple TV'
 tags:
