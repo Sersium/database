@@ -1,0 +1,163 @@
+name: 2160p Efficient Apple TV WEB-DL
+description: 'Apple TV-focused 2160p profile for high-quality source WEB-DLs.
+
+
+  - Targets 2160p WEB-DL only (no WEBRip/Bluray/Remux paths)
+
+  - Prioritizes Dolby Vision that is Apple TV-friendly (non-Profile 7 fallback handling)
+
+  - Video preference: Dolby Vision > HDR10+ > HDR10 > SDR
+
+  - Audio preference: DD+ Atmos > DD+ > Dolby Digital
+
+  - Rejects TrueHD-only releases and hard-bans lossy-incompatible formats for Apple TV'
+tags:
+- 2160p
+- WEB-DL Only
+- Apple TV
+- High Quality
+- Dolby Vision
+- Lossy Audio
+upgradesAllowed: true
+minCustomFormatScore: 20000
+upgradeUntilScore: 888888
+minScoreIncrement: 1
+custom_formats:
+- name: 2160p WEB-DL
+  score: 450000
+- name: Dolby Vision
+  score: 9000
+- name: HDR10+
+  score: 7000
+- name: HDR10
+  score: 5000
+- name: HDR
+  score: 3000
+- name: Dolby Digital +
+  score: 4000
+- name: Dolby Atmos
+  score: 3000
+- name: Dolby Digital
+  score: 1500
+- name: TrueHD
+  score: -999999
+- name: DTS-HD MA
+  score: -999999
+- name: DTS-X
+  score: -999999
+- name: WEB-DL Tier 1
+  score: 100
+- name: WEB-DL Tier 2
+  score: 80
+- name: WEB-DL Tier 3
+  score: 60
+- name: WEB-DL Tier 4
+  score: 40
+- name: WEB-DL Tier 5
+  score: 20
+- name: Repack3
+  score: 8
+- name: Repack2
+  score: 7
+- name: Repack1
+  score: 6
+- name: BCORE
+  score: 0
+- name: CRAV
+  score: 0
+- name: CRIT
+  score: 0
+- name: DRPO
+  score: 0
+- name: HTSR
+  score: 0
+- name: HULU
+  score: 0
+- name: iP
+  score: 0
+- name: MUBI
+  score: 0
+- name: NOW
+  score: 0
+- name: PCOK
+  score: 0
+- name: PLAY
+  score: 0
+- name: PMTP
+  score: 0
+- name: ROKU
+  score: 0
+- name: SHO
+  score: 0
+- name: STAN
+  score: 0
+- name: ASL
+  score: -999999
+- name: AV1
+  score: -999999
+- name: Banned Groups (Efficient)
+  score: -999999
+- name: Banned WEBRip (Efficient)
+  score: -999999
+- name: Dolby Vision (Without Fallback)
+  score: -999999
+- name: Full Disc
+  score: -999999
+- name: German DL
+  score: -999999
+- name: h265 (Efficient)
+  score: -999999
+- name: Remux
+  score: -999999
+- name: VP9
+  score: -999999
+- name: VVC
+  score: -999999
+- name: x264 (2160p)
+  score: -999999
+- name: x265 (Efficient)
+  score: -999999
+- name: Xvid
+  score: -999999
+custom_formats_radarr:
+- name: MA
+  score: 4000
+- name: Better Theatricals
+  score: 1000
+- name: Special Edition
+  score: 1000
+- name: 3D
+  score: -999999
+- name: B&W
+  score: -999999
+- name: Extras
+  score: -999999
+- name: Full Disc (Quality Match)
+  score: -999999
+- name: Remux (Quality Match)
+  score: -999999
+- name: Sing Along
+  score: -999999
+- name: Upscale
+  score: -999999
+custom_formats_sonarr:
+- name: Season Pack
+  score: 10
+- name: Remux (Source)
+  score: -999999
+- name: TV Extras
+  score: -999999
+- name: Upscaled
+  score: -999999
+qualities:
+- id: -1
+  name: 2160p WEB-DL
+  description: High-quality source WEB-DL only.
+  qualities:
+  - id: 5
+    name: WEBDL-2160p
+upgrade_until:
+  id: -1
+  name: 2160p WEB-DL
+  description: High-quality source WEB-DL only.
+language: must_original
