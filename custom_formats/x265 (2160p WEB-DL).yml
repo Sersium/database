@@ -15,7 +15,7 @@ conditions:
   type: source
 - name: x265 h265 HEVC
   negate: false
-  pattern: x265|h265|HEVC
+  pattern: HEVC
   required: true
   type: release_title
 tests: []
