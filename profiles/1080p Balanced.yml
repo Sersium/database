@@ -147,6 +147,8 @@ custom_formats:
   score: 0
 - name: STAN
   score: 0
+- name: ASL
+  score: -999999
 - name: AV1
   score: -999999
 - name: Banned Groups
@@ -158,6 +160,8 @@ custom_formats:
 - name: Dolby Vision
   score: -999999
 - name: Full Disc
+  score: -999999
+- name: German DL
   score: -999999
 - name: h265
   score: -999999

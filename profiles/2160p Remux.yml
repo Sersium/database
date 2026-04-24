@@ -218,6 +218,8 @@ custom_formats:
   score: 0
 - name: x265 (Bluray)
   score: -400000
+- name: ASL
+  score: -999999
 - name: AV1
   score: -999999
 - name: Banned Groups
@@ -231,6 +233,8 @@ custom_formats:
 - name: Dolby Vision (Without Fallback)
   score: -999999
 - name: Full Disc
+  score: -999999
+- name: German DL
   score: -999999
 - name: h265
   score: -999999
@@ -250,6 +254,8 @@ custom_formats:
   score: -999999
 custom_formats_radarr:
 - name: 2160p Balanced Tier 1
+  score: 462000
+- name: HONE Blurays
   score: 462000
 - name: 2160p Balanced Tier 2
   score: 461000
@@ -295,6 +301,8 @@ custom_formats_radarr:
   score: -999999
 custom_formats_sonarr:
 - name: 2160p Balanced Tier 1
+  score: 464000
+- name: HONE Blurays
   score: 464000
 - name: DSNP
   score: 3000
