@@ -173,3 +173,15 @@ custom_formats:
   score: -999999
 - name: Banned WEBRip
   score: -999999
+
+custom_formats_radarr: []
+
+custom_formats_sonarr: []
+
+qualities:
+  - 2160p
+  - 1080p
+
+upgrade_until: 2160p
+
+language: original
