@@ -1,0 +1,221 @@
+name: 2160p-1080p Apple TV 4K 3rd Gen Priority Matrix
+description: 'Strict Apple TV 4K (3rd Gen) profile with explicit 4K -> 1080p fallback ordering.
+
+  Priority model:
+
+  1) 2160p Dolby Vision (prefer Profile 5/8 signaling) + DD+ Atmos
+
+  2) 2160p Dolby Vision + lossless/non-DD+ audio (TrueHD/DTS-HD MA/DTS:X)
+
+  3) 2160p HDR10+ + DD+ Atmos
+
+  4) 2160p HDR10+ + lossless/non-DD+ audio
+
+  5) 2160p HDR10 + DD+ Atmos
+
+  6) 2160p HDR10 + lossless/non-DD+ audio
+
+  7) 2160p SDR + DD+ Atmos
+
+  8) 2160p SDR + lossless/non-DD+ audio
+
+  Then repeat same order for 1080p.
+
+  This profile hard blocks anything below 1080p.'
+tags:
+- 2160p
+- 1080p
+- Apple TV 4K
+- Priority Matrix
+- No Sub-1080p
+upgradesAllowed: true
+minCustomFormatScore: 1000
+upgradeUntilScore: 999999
+minScoreIncrement: 1
+custom_formats:
+- name: 2160p WEB-DL
+  score: 100900
+- name: 2160p Remux
+  score: 100800
+- name: UHD Bluray
+  score: 100700
+- name: 2160p Quality Tier 1
+  score: 100600
+- name: 2160p Quality Tier 2
+  score: 100500
+- name: 2160p Quality Tier 3
+  score: 100400
+- name: 2160p Quality Tier 4
+  score: 100300
+- name: 2160p Quality Tier 5
+  score: 100200
+- name: 2160p Quality Tier 6
+  score: 100100
+
+- name: 1080p WEB-DL
+  score: 1900
+- name: 1080p Remux
+  score: 1800
+- name: 1080p Bluray
+  score: 1700
+- name: 1080p WEBRip
+  score: 1600
+- name: 1080p Quality Tier 1
+  score: 1500
+- name: 1080p Quality Tier 2
+  score: 1400
+- name: 1080p Quality Tier 3
+  score: 1300
+- name: 1080p Quality Tier 4
+  score: 1200
+- name: 1080p Quality Tier 5
+  score: 1100
+- name: 1080p Quality Tier 6
+  score: 1000
+
+- name: Dolby Vision
+  score: 40000
+- name: Dolby Vision (Without Fallback)
+  score: 3000
+- name: HDR10+
+  score: 30000
+- name: HDR10
+  score: 20000
+- name: HDR
+  score: 15000
+- name: SDR
+  score: 10000
+
+- name: Dolby Digital +
+  score: 5000
+- name: Dolby Atmos
+  score: 4000
+- name: TrueHD
+  score: 2500
+- name: TrueHD (Missing)
+  score: 2400
+- name: DTS-HD MA
+  score: 2300
+- name: DTS-X
+  score: 2200
+- name: DTS-HD HRA
+  score: 1800
+- name: DTS
+  score: 1000
+- name: Dolby Digital
+  score: 900
+- name: AAC
+  score: 700
+
+- name: WEB-DL Tier 1
+  score: 100
+- name: WEB-DL Tier 2
+  score: 80
+- name: WEB-DL Tier 3
+  score: 60
+- name: WEB-DL Tier 4
+  score: 40
+- name: WEB-DL Tier 5
+  score: 20
+
+- name: 720p WEB-DL
+  score: -999999
+- name: 720p Bluray
+  score: -999999
+- name: 720p WEBRip
+  score: -999999
+- name: 720p HDTV
+  score: -999999
+- name: 720p HDTV Tier 1
+  score: -999999
+- name: 720p HDTV Tier 2
+  score: -999999
+- name: 720p HDTV Tier 3
+  score: -999999
+- name: 720p Quality Tier 1
+  score: -999999
+- name: 720p Quality Tier 2
+  score: -999999
+- name: 720p Quality Tier 3
+  score: -999999
+- name: 720p Quality Tier 4
+  score: -999999
+- name: 720p Quality Tier 5
+  score: -999999
+- name: 720p Quality Tier 6
+  score: -999999
+- name: 576p Bluray
+  score: -999999
+- name: 576p Quality Tier 1
+  score: -999999
+- name: 576p Quality Tier 2
+  score: -999999
+- name: 576p Quality Tier 3
+  score: -999999
+- name: 576p Quality Tier 4
+  score: -999999
+- name: 480p Bluray
+  score: -999999
+- name: 480p WEB-DL
+  score: -999999
+- name: 480p Quality Tier 1
+  score: -999999
+- name: 480p Quality Tier 2
+  score: -999999
+- name: 480p Quality Tier 3
+  score: -999999
+- name: 480p Quality Tier 4
+  score: -999999
+- name: DVD
+  score: -999999
+- name: DVD Remux
+  score: -999999
+- name: SDTV
+  score: -999999
+- name: SDTV Tier 1
+  score: -999999
+- name: SD Quality Tier 1
+  score: -999999
+- name: SD Quality Tier 2
+  score: -999999
+
+- name: Banned Groups
+  score: -999999
+- name: Banned Remux
+  score: -999999
+- name: Banned WEBRip
+  score: -999999
+
+custom_formats_radarr: []
+
+custom_formats_sonarr: []
+
+qualities:
+- id: -4
+  name: 2160p Remux
+  description: ''
+  qualities:
+  - id: 3
+    name: Remux-2160p
+  - id: 4
+    name: Bluray-2160p
+  - id: 5
+    name: WEBDL-2160p
+- id: -1
+  name: 1080p Remux
+  description: ''
+  qualities:
+  - id: 8
+    name: Remux-1080p
+  - id: 10
+    name: Bluray-1080p
+  - id: 9
+    name: WEBDL-1080p
+  - id: 11
+    name: WEBRip-1080p
+
+upgrade_until:
+  id: -4
+  name: 2160p Remux
+
+language: must_original
