@@ -34,44 +34,44 @@ upgradeUntilScore: 999999
 minScoreIncrement: 1
 custom_formats:
 - name: 2160p WEB-DL
-  score: 520000
+  score: 400900
 - name: 2160p Remux
-  score: 510000
+  score: 400800
 - name: UHD Bluray
-  score: 505000
+  score: 400700
 - name: 2160p Quality Tier 1
-  score: 504000
+  score: 400600
 - name: 2160p Quality Tier 2
-  score: 503000
+  score: 400500
 - name: 2160p Quality Tier 3
-  score: 502000
+  score: 400400
 - name: 2160p Quality Tier 4
-  score: 501000
+  score: 400300
 - name: 2160p Quality Tier 5
-  score: 500000
+  score: 400200
 - name: 2160p Quality Tier 6
-  score: 499000
+  score: 400100
 
 - name: 1080p WEB-DL
-  score: 320000
+  score: 200900
 - name: 1080p Remux
-  score: 315000
+  score: 200800
 - name: 1080p Bluray
-  score: 310000
+  score: 200700
 - name: 1080p WEBRip
-  score: 305000
+  score: 200600
 - name: 1080p Quality Tier 1
-  score: 304000
+  score: 200500
 - name: 1080p Quality Tier 2
-  score: 303000
+  score: 200400
 - name: 1080p Quality Tier 3
-  score: 302000
+  score: 200300
 - name: 1080p Quality Tier 4
-  score: 301000
+  score: 200200
 - name: 1080p Quality Tier 5
-  score: 300000
+  score: 200100
 - name: 1080p Quality Tier 6
-  score: 299000
+  score: 200000
 
 - name: Dolby Vision
   score: 40000
