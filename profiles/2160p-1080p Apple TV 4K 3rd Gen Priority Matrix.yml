@@ -34,44 +34,44 @@ upgradeUntilScore: 999999
 minScoreIncrement: 1
 custom_formats:
 - name: 2160p WEB-DL
-  score: 400900
+  score: 100900
 - name: 2160p Remux
-  score: 400800
+  score: 100800
 - name: UHD Bluray
-  score: 400700
+  score: 100700
 - name: 2160p Quality Tier 1
-  score: 400600
+  score: 100600
 - name: 2160p Quality Tier 2
-  score: 400500
+  score: 100500
 - name: 2160p Quality Tier 3
-  score: 400400
+  score: 100400
 - name: 2160p Quality Tier 4
-  score: 400300
+  score: 100300
 - name: 2160p Quality Tier 5
-  score: 400200
+  score: 100200
 - name: 2160p Quality Tier 6
-  score: 400100
+  score: 100100
 
 - name: 1080p WEB-DL
-  score: 200900
+  score: 1900
 - name: 1080p Remux
-  score: 200800
+  score: 1800
 - name: 1080p Bluray
-  score: 200700
+  score: 1700
 - name: 1080p WEBRip
-  score: 200600
+  score: 1600
 - name: 1080p Quality Tier 1
-  score: 200500
+  score: 1500
 - name: 1080p Quality Tier 2
-  score: 200400
+  score: 1400
 - name: 1080p Quality Tier 3
-  score: 200300
+  score: 1300
 - name: 1080p Quality Tier 4
-  score: 200200
+  score: 1200
 - name: 1080p Quality Tier 5
-  score: 200100
+  score: 1100
 - name: 1080p Quality Tier 6
-  score: 200000
+  score: 1000
 
 - name: Dolby Vision
   score: 40000
@@ -124,6 +124,14 @@ custom_formats:
   score: -999999
 - name: 720p WEBRip
   score: -999999
+- name: 720p HDTV
+  score: -999999
+- name: 720p HDTV Tier 1
+  score: -999999
+- name: 720p HDTV Tier 2
+  score: -999999
+- name: 720p HDTV Tier 3
+  score: -999999
 - name: 720p Quality Tier 1
   score: -999999
 - name: 720p Quality Tier 2
@@ -162,6 +170,10 @@ custom_formats:
   score: -999999
 - name: DVD Remux
   score: -999999
+- name: SDTV
+  score: -999999
+- name: SDTV Tier 1
+  score: -999999
 - name: SD Quality Tier 1
   score: -999999
 - name: SD Quality Tier 2
@@ -179,9 +191,31 @@ custom_formats_radarr: []
 custom_formats_sonarr: []
 
 qualities:
-  - 2160p
-  - 1080p
+- id: -4
+  name: 2160p Remux
+  description: ''
+  qualities:
+  - id: 3
+    name: Remux-2160p
+  - id: 4
+    name: Bluray-2160p
+  - id: 5
+    name: WEBDL-2160p
+- id: -1
+  name: 1080p Remux
+  description: ''
+  qualities:
+  - id: 8
+    name: Remux-1080p
+  - id: 10
+    name: Bluray-1080p
+  - id: 9
+    name: WEBDL-1080p
+  - id: 11
+    name: WEBRip-1080p
 
-upgrade_until: 2160p
+upgrade_until:
+  id: -4
+  name: 2160p Remux
 
-language: original
+language: must_original
